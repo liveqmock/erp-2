@@ -1,0 +1,71 @@
+.orderBox {
+  p {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .gridTitle {
+    display: inline-block;
+    margin: 0 0 10px 20px;
+    font-weight: 550
+  }
+  .detailBox {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 1px dashed #E9EAEC;
+    .detailItem {
+      margin-right: 25px;
+      width: 350px;
+      > span {
+        display: inline-block;
+      }
+      .label {
+        width: 100px;
+        height: 35px;
+        text-align: right;
+        line-height: 35px;
+        // font-weight: bold;
+      }
+      .text {
+        width: 230px;
+        min-height: 35px;
+        text-align: left;
+        line-height: 35px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+/* .contentBox {
+  position: relative;
+} */
+.btnGroup {
+  margin-top: 15px;
+  padding-right: 15px;
+  text-align: right
+}
+.gridCard {
+  margin-bottom: 60px;
+}
+.floatBar {
+  &:hover {
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+    border-color: #eee;
+  }
+  border: 1px solid #dddee1;
+  border-color: #e9eaec;
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
+  padding: 10px;
+  @diff : 200px;
+  width : calc(~"100% - @{diff}");
+  // width: calc(100% -200px);
+  background-color: #fff;
+  position: fixed;
+  bottom: 5px;
+  z-index: 9999;
+  .btnGroup {
+    margin-top: 0;
+    text-align: center;
+  }
+}

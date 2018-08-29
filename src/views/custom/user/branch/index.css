@@ -1,0 +1,7 @@
+.depTree {
+  height: calc(100vh - 190px);
+}
+.depCard {
+  min-height: calc(100vh - 190px);
+  overflow-y: auto;
+}

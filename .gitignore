@@ -1,0 +1,16 @@
+npm-debug.log
+node_modules
+.project
+.vscode
+.history
+.DS_Store
+.idea/
+\.settings/
+build/env.js
+dist/
+/src/views/custom/user/branch/index.bak
+/src/views/custom/user/branch/index.bak
+/src/views/custom/user/user/index.bak.vue
+/src/views/custom/user/user/index.vue.bak
+
+

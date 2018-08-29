@@ -1,0 +1,9 @@
+.supplyManage .colRight {
+  text-align: right;
+}
+.supplyManage .marginBottom {
+  margin-bottom: 10px;
+}
+.checkAllBox {
+  border-bottom: 1px solid #dddee1;
+}

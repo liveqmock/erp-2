@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>iView admin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="/dist/main.css">
+    <link rel="stylesheet" name="theme" href="">
+    <link rel="icon" href="./td_icon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="app">
+		<div id="lowVersion" class="ivu-alert ivu-alert-warning ivu-alert-with-icon ivu-alert-with-desc" style="display: none; margin: 88px auto; width: 1200px;">
+			<span class="ivu-alert-icon"><i class="ivu-icon ivu-icon-android-alert"></i></span>
+			<span class="ivu-alert-message">温馨提示</span>
+			<span class="ivu-alert-desc">您的浏览器版本过低，请升级浏览器（<a href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads">下载地址</a>），或使用Chrome（<a href="https://www.google.cn/intl/zh-CN/chrome/">官网链接</a>）、Firefox（<a href="http://www.firefox.com.cn/">官网链接</a>）等浏览器！</span>
+		</div>
+    </div>
+    <script type="text/javascript">
+		//判断是否是IE浏览器，包括Edge浏览器 
+		function IEVersion() {
+			var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串 
+			var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器 
+			var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器 
+			if(isIE) {
+				var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+				reIE.test(userAgent);
+				var fIEVersion = parseFloat(RegExp["$1"]);
+				if(fIEVersion < 10){
+					document.getElementById("lowVersion").style.display = 'block';
+				}
+			}
+		}
+		IEVersion();
+    </script>
+    <script type="text/javascript" src="/dist/vender-base.js"></script>
+    <script type="text/javascript" src="/dist/vender-exten.js"></script>
+    <script type="text/javascript" src="/dist/main.js"></script>
+</body>
+</html>

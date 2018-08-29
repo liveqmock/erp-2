@@ -1,0 +1,23 @@
+.userList .ivu-table td,
+.userList .ivu-table th {
+  height: 49px;
+}
+.userList .ivu-table-cell {
+  min-width: 120px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.userList .ivu-table-body > table {
+  min-width: 1085px;
+}
+.userList .slelection .ivu-table-cell {
+  min-width: 0px;
+}
+.userList .newBtn {
+  margin-bottom: 10px;
+}
+/* .ivu-table-row {
+  > td {
+    min-width: 115px;
+  }
+} */

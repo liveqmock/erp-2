@@ -1,0 +1,35 @@
+.orderBox p {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.orderBox .detailBox {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-bottom: 1px dashed #E9EAEC;
+}
+.orderBox .detailBox .detailItem {
+  margin-right: 25px;
+  width: 350px;
+}
+.orderBox .detailBox .detailItem > span {
+  display: inline-block;
+}
+.orderBox .detailBox .detailItem .label {
+  width: 100px;
+  height: 35px;
+  text-align: right;
+  line-height: 35px;
+}
+.orderBox .detailBox .detailItem .text {
+  width: 230px;
+  min-height: 35px;
+  text-align: left;
+  line-height: 35px;
+  padding-left: 10px;
+}
+.btnGroup {
+  margin-top: 15px;
+  padding-right: 15px;
+  text-align: right;
+}
